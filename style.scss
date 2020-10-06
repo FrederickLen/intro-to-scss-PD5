@@ -17,8 +17,36 @@ body {
 }
 .header {
   height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(color(primary), 0.5),
+      rgba(color(primary-light), 0.5)
+    ),
+    url(img/headphones-bg.jpg);
+  background-size: cover;
+  //background-position: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+}
+.header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
 }
 .header-primary {
-  color: limegreen;
+  color: #fff;
   font-size: 10rem;
+}
+.header-primary-main {
+  display: block;
+  letter-spacing: 1rem;
+}
+.header-primary-sub {
+  font-size: 4rem;
 }
