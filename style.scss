@@ -2,7 +2,7 @@ $colors: (
   primary: #45a29e,
   primary-light: #66fcf1,
 );
-
+$fontMain: "Josefin Sans", sans-serif;
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
@@ -14,6 +14,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%; //1rem === 10px
+  font-family: $fontMain;
 }
 .header {
   height: 100vh;
@@ -46,6 +47,7 @@ body {
 .header-primary-main {
   display: block;
   letter-spacing: 1rem;
+  text-shadow: #333 5px 5px;
 }
 .header-primary-sub {
   font-size: 4rem;

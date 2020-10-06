@@ -5,6 +5,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .header {
@@ -37,6 +38,7 @@ body {
 .header-primary-main {
   display: block;
   letter-spacing: 1rem;
+  text-shadow: #333 5px 5px;
 }
 
 .header-primary-sub {
