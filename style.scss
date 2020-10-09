@@ -1,13 +1,5 @@
-$colors: (
-  primary: #45a29e,
-  primary-light: #66fcf1,
-);
-$fontMain: "Josefin Sans", sans-serif;
-@function color($color-name) {
-  @return map-get($colors, $color-name);
-}
-
 //px's are for monkeys, rem OR relative units, 1rem = 10px, vw = viewport width AND VH= viewport height
+@import "_variables.scss";
 html,
 body {
   margin: 0;
@@ -15,6 +7,8 @@ body {
   box-sizing: border-box;
   font-size: 62.5%; //1rem === 10px
   font-family: $fontMain;
+
+  background-color: black;
 }
 .header {
   height: 100vh;
@@ -31,6 +25,7 @@ body {
   justify-content: center;
   align-items: center; */
   position: relative;
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
 }
 .header-text-box {
   position: absolute;
