@@ -1,0 +1,73 @@
+@import "_variables.scss";
+
+html,
+body {
+  font-size: 11pt;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+}
+
+header {
+  height: 30vh;
+  width: 100vw;
+  background-color: color(CustomGreen);
+  background-size: cover;
+  position: relative;
+  font-family: font(ArmyFont), cursive;
+
+  .header-text-box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1.header-primary {
+      text-align: center;
+      font-weight: 700;
+
+      span.header-primary-main {
+        font-size: 3rem;
+        text-transform: uppercase;
+        display: block;
+        color: color(CustomBlack);
+      }
+      span.header-primary-sub {
+        font-size: 2rem;
+        color: color(CustomGray);
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: font(RegularFont), sans-serif;
+  height: 120vh;
+  width: 100vw;
+  background-color: color(CustomGreen);
+
+  .box {
+    height: 30vh;
+    width: 70vw;
+    background-color: color(CustomBlue);
+    padding: 10px;
+
+    img.postimage {
+      float: left;
+      margin: 10px;
+      width: 220px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}

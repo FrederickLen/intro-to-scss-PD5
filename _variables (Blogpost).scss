@@ -1,0 +1,16 @@
+$colors: (
+  CustomBlue: rgb(190, 246, 250),
+  CustomGreen: rgb(120, 187, 123),
+  CustomBlack: rgb(20, 20, 20),
+  CustomGrey: rgb(49, 49, 49),
+);
+$fonts: (
+  ArmyFont: "Black Ops One",
+  RegularFont: "Titillium Web",
+);
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+@function font($font-name) {
+  @return map-get($fonts, $font-name);
+}
